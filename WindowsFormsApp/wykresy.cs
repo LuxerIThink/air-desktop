@@ -35,7 +35,7 @@ namespace WindowsFormsApp
             {
                 try
                 {
-                    var result = await httpClient.GetAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/measurements.php");
+                    var result = await httpClient.GetAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/get_data");
                     var json = await result.Content.ReadAsStringAsync();
                     dynamic jsonObject = JsonConvert.DeserializeObject(json);
                     dynamic arrayElement = jsonObject[0];
