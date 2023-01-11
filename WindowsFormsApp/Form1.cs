@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +18,11 @@ namespace WindowsFormsApp
             InitializeComponent();
             led1.Hide();
             tabela1.Hide();
+            wykresy1.Hide();
+            btnIP.BackColor = Color.FromArgb(60, 140, 240);
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnwykresy_Click(object sender, EventArgs e)
@@ -29,6 +30,7 @@ namespace WindowsFormsApp
             wykresy1.Show();
             led1.Hide();
             tabela1.Hide();
+            ip1.Hide();
 
         }
 
@@ -37,6 +39,7 @@ namespace WindowsFormsApp
             tabela1.Show();
             wykresy1.Hide();
             led1.Hide();
+            ip1.Hide();
         }
 
         private void btnLED_Click(object sender, EventArgs e)
@@ -44,6 +47,19 @@ namespace WindowsFormsApp
             led1.Show();
             wykresy1.Hide();
             tabela1.Hide();
+            ip1.Hide();
+        }
+        private void btnIP_Click(object sender, EventArgs e)
+        {
+            ip1.Show();
+            led1.Hide();
+            wykresy1.Hide();
+            tabela1.Hide();
+        }
+
+        private void wykresy1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

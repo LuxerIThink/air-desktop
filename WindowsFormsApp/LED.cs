@@ -64,5 +64,10 @@ namespace WindowsFormsApp
         {
             button1.BackColor = Color.FromArgb(metroTrackBar4.Value, metroTrackBar5.Value, metroTrackBar6.Value);
         }
+
+        private void LED_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

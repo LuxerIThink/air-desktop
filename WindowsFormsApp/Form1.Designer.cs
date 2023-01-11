@@ -32,9 +32,11 @@
             this.btnWykresy = new MetroFramework.Controls.MetroButton();
             this.btnTabela = new MetroFramework.Controls.MetroButton();
             this.btnLED = new MetroFramework.Controls.MetroButton();
-            this.wykresy1 = new WindowsFormsApp.wykresy();
-            this.led1 = new WindowsFormsApp.LED();
+            this.btnIP = new MetroFramework.Controls.MetroButton();
+            this.ip1 = new WindowsFormsApp.IP();
             this.tabela1 = new WindowsFormsApp.tabela();
+            this.led1 = new WindowsFormsApp.LED();
+            this.wykresy1 = new WindowsFormsApp.wykresy();
             this.SuspendLayout();
             // 
             // btnWykresy
@@ -58,25 +60,41 @@
             this.btnLED.UseSelectable = true;
             this.btnLED.Click += new System.EventHandler(this.btnLED_Click);
             // 
-            // wykresy1
+            // btnIP
             // 
-            resources.ApplyResources(this.wykresy1, "wykresy1");
-            this.wykresy1.Name = "wykresy1";
+            this.btnIP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(140)))), ((int)(((byte)(240)))));
+            resources.ApplyResources(this.btnIP, "btnIP");
+            this.btnIP.Name = "btnIP";
+            this.btnIP.UseSelectable = true;
+            this.btnIP.Click += new System.EventHandler(this.btnIP_Click);
             // 
-            // led1
+            // ip1
             // 
-            resources.ApplyResources(this.led1, "led1");
-            this.led1.Name = "led1";
+            resources.ApplyResources(this.ip1, "ip1");
+            this.ip1.Name = "ip1";
             // 
             // tabela1
             // 
             resources.ApplyResources(this.tabela1, "tabela1");
             this.tabela1.Name = "tabela1";
             // 
+            // led1
+            // 
+            resources.ApplyResources(this.led1, "led1");
+            this.led1.Name = "led1";
+            // 
+            // wykresy1
+            // 
+            resources.ApplyResources(this.wykresy1, "wykresy1");
+            this.wykresy1.Name = "wykresy1";
+            this.wykresy1.Load += new System.EventHandler(this.wykresy1_Load);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ip1);
+            this.Controls.Add(this.btnIP);
             this.Controls.Add(this.tabela1);
             this.Controls.Add(this.led1);
             this.Controls.Add(this.wykresy1);
@@ -97,6 +115,8 @@
         private wykresy wykresy1;
         private LED led1;
         private tabela tabela1;
+        private MetroFramework.Controls.MetroButton btnIP;
+        private IP ip1;
     }
 }
 

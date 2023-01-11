@@ -825,6 +825,7 @@
             this.Controls.Add(this.metroTrackBar4);
             this.Name = "LED";
             this.Size = new System.Drawing.Size(600, 600);
+            this.Load += new System.EventHandler(this.LED_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

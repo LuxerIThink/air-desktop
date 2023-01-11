@@ -19,3 +19,8 @@ C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFor
 C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\obj\Debug\tig\WindowsFormsApp.resources.dll
 C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.LED.resources
 C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.tabela.resources
+C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.IP.resources
+C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\bin\Debug\Newtonsoft.Json.Schema.dll
+C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Barte\source\repos\WindowsFormsApp\WindowsFormsApp\bin\Debug\Newtonsoft.Json.Schema.xml

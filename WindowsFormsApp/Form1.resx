@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnWykresy.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btnTabela.Location" type="System.Drawing.Point, System.Drawing">
     <value>1078, 39</value>
@@ -165,7 +165,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnTabela.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btnLED.Location" type="System.Drawing.Point, System.Drawing">
     <value>1175, 39</value>
@@ -189,6 +189,96 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnLED.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 39</value>
+  </data>
+  <data name="btnIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 34</value>
+  </data>
+  <data name="btnIP.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnIP.Text" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="&gt;&gt;btnIP.Name" xml:space="preserve">
+    <value>btnIP</value>
+  </data>
+  <data name="&gt;&gt;btnIP.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;btnIP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnIP.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 97</value>
+  </data>
+  <data name="ip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 600</value>
+  </data>
+  <data name="ip1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ip1.Name" xml:space="preserve">
+    <value>ip1</value>
+  </data>
+  <data name="&gt;&gt;ip1.Type" xml:space="preserve">
+    <value>WindowsFormsApp.IP, WindowsFormsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabela1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 97</value>
+  </data>
+  <data name="tabela1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 600</value>
+  </data>
+  <data name="tabela1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabela1.Name" xml:space="preserve">
+    <value>tabela1</value>
+  </data>
+  <data name="&gt;&gt;tabela1.Type" xml:space="preserve">
+    <value>WindowsFormsApp.tabela, WindowsFormsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tabela1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabela1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="led1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 79</value>
+  </data>
+  <data name="led1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>600, 600</value>
+  </data>
+  <data name="led1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 600</value>
+  </data>
+  <data name="led1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;led1.Name" xml:space="preserve">
+    <value>led1</value>
+  </data>
+  <data name="&gt;&gt;led1.Type" xml:space="preserve">
+    <value>WindowsFormsApp.LED, WindowsFormsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;led1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;led1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="wykresy1.Location" type="System.Drawing.Point, System.Drawing">
@@ -213,52 +303,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;wykresy1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="led1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 80</value>
-  </data>
-  <data name="led1.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>600, 600</value>
-  </data>
-  <data name="led1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 600</value>
-  </data>
-  <data name="led1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="&gt;&gt;led1.Name" xml:space="preserve">
-    <value>led1</value>
-  </data>
-  <data name="&gt;&gt;led1.Type" xml:space="preserve">
-    <value>WindowsFormsApp.LED, WindowsFormsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;led1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;led1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabela1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 97</value>
-  </data>
-  <data name="tabela1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 600</value>
-  </data>
-  <data name="tabela1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;tabela1.Name" xml:space="preserve">
-    <value>tabela1</value>
-  </data>
-  <data name="&gt;&gt;tabela1.Type" xml:space="preserve">
-    <value>WindowsFormsApp.tabela, WindowsFormsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;tabela1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabela1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -269,10 +314,13 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1280, 720</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>1280, 720</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>WindowsDefaultLocation</value>
   </data>
