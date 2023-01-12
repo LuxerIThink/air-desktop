@@ -54,7 +54,7 @@
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(207, 209);
+            this.metroTextBox1.Location = new System.Drawing.Point(223, 225);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
@@ -84,7 +84,7 @@
             this.metroTextBox2.CustomButton.UseSelectable = true;
             this.metroTextBox2.CustomButton.Visible = false;
             this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(207, 241);
+            this.metroTextBox2.Location = new System.Drawing.Point(223, 257);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
             this.metroTextBox2.PasswordChar = '\0';
@@ -107,7 +107,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(181, 209);
+            this.metroLabel1.Location = new System.Drawing.Point(197, 225);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(20, 19);
             this.metroLabel1.TabIndex = 3;
@@ -117,7 +117,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(167, 241);
+            this.metroLabel2.Location = new System.Drawing.Point(183, 257);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(34, 19);
             this.metroLabel2.TabIndex = 4;
@@ -126,7 +126,7 @@
             // 
             // IPconf
             // 
-            this.IPconf.Location = new System.Drawing.Point(252, 270);
+            this.IPconf.Location = new System.Drawing.Point(268, 286);
             this.IPconf.Name = "IPconf";
             this.IPconf.Size = new System.Drawing.Size(96, 43);
             this.IPconf.TabIndex = 5;
@@ -137,7 +137,7 @@
             // Label_IP
             // 
             this.Label_IP.AutoSize = true;
-            this.Label_IP.Location = new System.Drawing.Point(400, 209);
+            this.Label_IP.Location = new System.Drawing.Point(416, 225);
             this.Label_IP.Name = "Label_IP";
             this.Label_IP.Size = new System.Drawing.Size(20, 19);
             this.Label_IP.TabIndex = 6;
@@ -146,7 +146,7 @@
             // Label_PORT
             // 
             this.Label_PORT.AutoSize = true;
-            this.Label_PORT.Location = new System.Drawing.Point(400, 241);
+            this.Label_PORT.Location = new System.Drawing.Point(416, 257);
             this.Label_PORT.Name = "Label_PORT";
             this.Label_PORT.Size = new System.Drawing.Size(43, 19);
             this.Label_PORT.TabIndex = 7;

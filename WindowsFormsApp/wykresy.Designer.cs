@@ -66,7 +66,7 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Location = new System.Drawing.Point(61, 222);
+            this.chart1.Location = new System.Drawing.Point(38, 222);
             this.chart1.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
@@ -102,7 +102,7 @@
             // 
             chartArea3.Name = "ChartArea1";
             this.chart3.ChartAreas.Add(chartArea3);
-            this.chart3.Location = new System.Drawing.Point(61, 20);
+            this.chart3.Location = new System.Drawing.Point(38, 20);
             this.chart3.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.chart3.Name = "chart3";
             series3.ChartArea = "ChartArea1";
@@ -138,7 +138,7 @@
             // 
             chartArea5.Name = "ChartArea1";
             this.chart5.ChartAreas.Add(chartArea5);
-            this.chart5.Location = new System.Drawing.Point(61, 428);
+            this.chart5.Location = new System.Drawing.Point(38, 428);
             this.chart5.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.chart5.Name = "chart5";
             series5.ChartArea = "ChartArea1";

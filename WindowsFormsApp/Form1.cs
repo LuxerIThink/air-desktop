@@ -16,10 +16,9 @@ namespace WindowsFormsApp
         public Form1()
         {
             InitializeComponent();
-            led1.Hide();
+            led2.Hide();
             tabela1.Hide();
-            wykresy1.Hide();
-            btnIP.BackColor = Color.FromArgb(60, 140, 240);
+            wykresy2.Hide();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -27,37 +26,42 @@ namespace WindowsFormsApp
 
         private void btnwykresy_Click(object sender, EventArgs e)
         {
-            wykresy1.Show();
-            led1.Hide();
+            wykresy2.Show();
+            led2.Hide();
             tabela1.Hide();
-            ip1.Hide();
+            ip2.Hide();
 
         }
 
         private void btnTabela_Click(object sender, EventArgs e)
         {
             tabela1.Show();
-            wykresy1.Hide();
-            led1.Hide();
-            ip1.Hide();
+            wykresy2.Hide();
+            led2.Hide();
+            ip2.Hide();
         }
 
         private void btnLED_Click(object sender, EventArgs e)
         {
-            led1.Show();
-            wykresy1.Hide();
+            led2.Show();
+            wykresy2.Hide();
             tabela1.Hide();
-            ip1.Hide();
+            ip2.Hide();
         }
         private void btnIP_Click(object sender, EventArgs e)
         {
-            ip1.Show();
-            led1.Hide();
-            wykresy1.Hide();
+            ip2.Show();
+            led2.Hide();
+            wykresy2.Hide();
             tabela1.Hide();
         }
 
         private void wykresy1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wykresy2_Load(object sender, EventArgs e)
         {
 
         }
