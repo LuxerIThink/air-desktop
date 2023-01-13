@@ -188,7 +188,7 @@
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(113, 51);
             this.Save.TabIndex = 79;
-            this.Save.Text = "Save";
+            this.Save.Text = "SAVE";
             this.Save.UseSelectable = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
