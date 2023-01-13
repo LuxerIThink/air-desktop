@@ -96,18 +96,18 @@ namespace WindowsFormsApp
                 try
                 {
                     var Task = httpClient.PutAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/put_led", json_to_send);
-                    if (Task.IsCompleted)
+                    /*if (Task.IsCompleted)
                     {
                         Console.WriteLine("JSON sent successfully");
                     }
                     else
                     {
                         Console.WriteLine("Error sending JSON: " + Task.Result);
-                    }
+                    }*/
                 }
                 catch (Exception exc)
                 {
-                    Console.WriteLine(exc.Message);
+                    //Console.WriteLine(exc.Message);
                 }
             }
         }
