@@ -130,7 +130,7 @@
             this.IPconf.Name = "IPconf";
             this.IPconf.Size = new System.Drawing.Size(96, 43);
             this.IPconf.TabIndex = 5;
-            this.IPconf.Text = "Zatwierdź";
+            this.IPconf.Text = "Save";
             this.IPconf.UseSelectable = true;
             this.IPconf.Click += new System.EventHandler(this.IPconf_Click);
             // 
