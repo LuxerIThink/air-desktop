@@ -86,7 +86,7 @@ namespace WindowsFormsApp
                     int row = tableLayoutPanel1.GetRow(c);
                     int column = tableLayoutPanel1.GetColumn(c);
                     System.Drawing.Color buttonColor = c.BackColor;
-                    points.Add(new ColorPoint { x = row, y = column, r = buttonColor.R, g = buttonColor.G, b = buttonColor.B });
+                    points.Add(new ColorPoint { x = column, y = row, r = buttonColor.R, g = buttonColor.G, b = buttonColor.B });
                 }
             }
             string json = JsonConvert.SerializeObject(points);
@@ -95,7 +95,7 @@ namespace WindowsFormsApp
             {
                 try
                 {
-                    var Task = httpClient.PutAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/put_led", json_to_send);
+                    var Task = httpClient.PutAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/led_display.php", json_to_send);
                     if (Task.IsCompleted)
                     {
                         Console.WriteLine("JSON sent successfully");
