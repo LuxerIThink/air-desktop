@@ -33,9 +33,18 @@ namespace WindowsFormsApp
             
         }
 
-        private void tabela_Load(object sender, EventArgs e)
+        private async void tabela_Load(object sender, EventArgs e)
         {
+            var httpClient = new HttpClient() { Timeout = TimeSpan.FromSeconds(50) };
+            var result = await httpClient.GetAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/get_data.php");
+            var json = await result.Content.ReadAsStringAsync();
+            dynamic jsonObject = JsonConvert.DeserializeObject(json);
+            dynamic arrayElement = jsonObject[0];
 
+            foreach (var item in arrayElement)
+            {
+                dataGridView1.Columns.Add(item.Name.ToString(), item.Name.ToString());
+            }
         }
 
         private async void timer1_Tick(object sender, EventArgs e)
@@ -47,12 +56,7 @@ namespace WindowsFormsApp
                 var json = await result.Content.ReadAsStringAsync();
                 dynamic jsonObject = JsonConvert.DeserializeObject(json);
                 dynamic arrayElement = jsonObject[0];
-
-                foreach (var item in arrayElement)
-                {
-                    dataGridView1.Columns.Add(item.Name.ToString(), item.Name.ToString());
-                }
-
+                
                 dataGridView1.Rows.Add();
                 int currentRow = dataGridView1.Rows.Count-2;
                 int currentColumn = 0;

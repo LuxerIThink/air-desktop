@@ -87,7 +87,6 @@
             // 
             resources.ApplyResources(this.wykresy2, "wykresy2");
             this.wykresy2.Name = "wykresy2";
-            this.wykresy2.Load += new System.EventHandler(this.wykresy2_Load);
             // 
             // Form1
             // 

@@ -22,6 +22,7 @@ namespace WindowsFormsApp
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+
         }
 
         private void btnwykresy_Click(object sender, EventArgs e)
@@ -57,11 +58,6 @@ namespace WindowsFormsApp
         }
 
         private void wykresy1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void wykresy2_Load(object sender, EventArgs e)
         {
 
         }
