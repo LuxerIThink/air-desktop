@@ -96,7 +96,7 @@ namespace WindowsFormsApp
             {
                 try
                 {
-                    var Task = httpClient.PutAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/led_display", json_to_send);
+                    var Task = httpClient.PutAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/put_led", json_to_send);
                 }
                 catch (Exception exc)
                 {

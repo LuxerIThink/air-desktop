@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Xml.Linq;
 using static SharedVariables;
 
 namespace WindowsFormsApp
@@ -20,12 +21,6 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
             timer.Start();
-            dataGridView1.Columns.Add("Temperature", "Temperature");
-            dataGridView1.Columns.Add("Pressure", "Pressure");
-            dataGridView1.Columns.Add("Humidity", "Humidity");
-            dataGridView1.Columns.Add("Roll", "Roll");
-            dataGridView1.Columns.Add("Pitch", "Pitch");
-            dataGridView1.Columns.Add("Yaw", "Yaw");
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -48,34 +43,33 @@ namespace WindowsFormsApp
             try
             {
                 var httpClient = new HttpClient() { Timeout = TimeSpan.FromSeconds(50) };
-                var result = await httpClient.GetAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/get_data.php");
+                var result = await httpClient.GetAsync("http://" + SharedVariables.ShowIP() + ":" + SharedVariables.ShowPort() + "/get_data");
                 var json = await result.Content.ReadAsStringAsync();
                 dynamic jsonObject = JsonConvert.DeserializeObject(json);
                 dynamic arrayElement = jsonObject[0];
-                List<dynamic> valuesList = new List<dynamic>() { "temperature", "pressure", "humidity", "roll", "pitch", "yaw" };
+
+                foreach (var item in arrayElement)
+                {
+                    dataGridView1.Columns.Add(item.Name.ToString(), item.Name.ToString());
+                }
+
                 dataGridView1.Rows.Add();
                 int currentRow = dataGridView1.Rows.Count-2;
                 int currentColumn = 0;
-                
-                foreach (var item in valuesList)
+
+                foreach (var item in arrayElement)
                 {
-                    var name = arrayElement[item];
+                    var name = arrayElement[item.Name];
                     string value = name["value"];
                     string unit = name["unit"];
                     dataGridView1[currentColumn, currentRow].Value = value + " " + unit;
                     currentColumn++;
                 }
-                
             }
             catch (Exception exc)
             {
                 //Console.WriteLine(exc.Message);
             }
-        }
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
